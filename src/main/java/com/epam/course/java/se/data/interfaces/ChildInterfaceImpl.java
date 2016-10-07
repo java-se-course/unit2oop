@@ -19,4 +19,8 @@ public class ChildInterfaceImpl implements ChildInterface {
     public String conflict() {
         return "conflict";
     }
+
+    public double getPi() {
+        return BaseInterface1.PI * BaseInterface2.PI;
+    }
 }

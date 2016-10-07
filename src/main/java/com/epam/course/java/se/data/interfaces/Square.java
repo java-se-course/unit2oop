@@ -1,9 +1,6 @@
 package com.epam.course.java.se.data.interfaces;
 
-public interface BaseInterface1 {
+public interface Square {
     double PI = 3.14159265;
-
-    String info();
-
-    String conflict();
+    double square();
 }
