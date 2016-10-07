@@ -20,6 +20,11 @@ public class ChildInterfaceImpl implements ChildInterface {
         return "conflict";
     }
 
+    @Override
+    public Internal getInternal() {
+        return new InternalImpl();
+    }
+
     public double getPi() {
         return BaseInterface1.PI * BaseInterface2.PI;
     }

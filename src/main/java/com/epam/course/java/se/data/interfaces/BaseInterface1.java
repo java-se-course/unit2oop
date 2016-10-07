@@ -6,4 +6,8 @@ public interface BaseInterface1 {
     String info();
 
     String conflict();
+
+    interface Internal{}
+
+    Internal getInternal();
 }

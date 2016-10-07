@@ -1,9 +1,6 @@
 package com.epam.course.java.se.interfaces;
 
-import com.epam.course.java.se.data.interfaces.BaseInterface1;
-import com.epam.course.java.se.data.interfaces.BaseInterface2;
-import com.epam.course.java.se.data.interfaces.ChildInterface;
-import com.epam.course.java.se.data.interfaces.ChildInterfaceImpl;
+import com.epam.course.java.se.data.interfaces.*;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -30,6 +27,13 @@ public class InterfacesTest {
         final Object obj = childInterface;
         childInterface.hashCode();
         assertTrue(childInterface.equals(baseInterface1));
+    }
+
+    @Test
+    public void internal() {
+        final BaseInterface1.Internal internal = new InternalImpl();
+
+        System.out.println(internal);
     }
 
 }
