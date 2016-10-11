@@ -1,6 +1,11 @@
 package com.epam.course.java.se.generics;
 
+import com.epam.course.java.se.data.generics.Box;
 import com.epam.course.java.se.data.generics.Message;
+import com.epam.course.java.se.data.interfaces.BaseInterface1;
+import com.epam.course.java.se.data.interfaces.BaseInterface2;
+import com.epam.course.java.se.data.interfaces.ChildInterface;
+import com.epam.course.java.se.data.interfaces.ChildInterfaceImpl;
 import org.junit.Test;
 
 public class GenericsTest {
@@ -34,4 +39,28 @@ public class GenericsTest {
         System.out.println("Before");
         final String name = message.getName();
     }
+
+    @Test
+    public void ext() {
+        final ChildInterfaceImpl childInterface = new ChildInterfaceImpl();
+
+        final Box<BaseInterface1> box = new Box<>(childInterface);
+
+        final BaseInterface1 base = childInterface;
+
+        box.setT(childInterface);
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
