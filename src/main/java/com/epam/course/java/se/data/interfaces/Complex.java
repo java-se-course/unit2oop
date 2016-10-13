@@ -38,4 +38,11 @@ public class Complex implements Comparable<Complex> {
     }
 
     public static final Comparator<Complex> BY_REAL = new RealComparator();
+
+    public static class RealComparator implements Comparator<Complex> {
+        @Override
+        public int compare(Complex o1, Complex o2) {
+            return Integer.compare(o1.getRe(), o2.getRe());
+        }
+    }
 }
