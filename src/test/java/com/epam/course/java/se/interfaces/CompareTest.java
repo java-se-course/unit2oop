@@ -90,8 +90,7 @@ public class CompareTest {
 //                        }
 //                );
         final Set<Complex> complices =
-                new TreeSet<Complex>(Comparator.comparing(c -> c.getIm())) {
-                    {
+                new TreeSet<Complex>(Comparator.comparing(c -> c.getIm())) /*{{
                         add(new Complex(5, 5));
                         add(new Complex(5, 4));
                         add(new Complex(0, 2));
@@ -103,19 +102,18 @@ public class CompareTest {
                         add(new Complex(0, 0));
                         add(new Complex(4, 7));
                         add(new Complex(4, 7));
-                    }
-                };
-//        complices.add(new Complex(5, 5));
-//        complices.add(new Complex(5, 4));
-//        complices.add(new Complex(0, 2));
-//        complices.add(new Complex(0, 2));
-//        complices.add(new Complex(1, 0));
-//        complices.add(new Complex(1, 6));
-//        complices.add(new Complex(6, 5));
-//        complices.add(new Complex(6, 5));
-//        complices.add(new Complex(0, 0));
-//        complices.add(new Complex(4, 7));
-//        complices.add(new Complex(4, 7));
+                    }}*/;
+        complices.add(new Complex(5, 5));
+        complices.add(new Complex(5, 4));
+        complices.add(new Complex(0, 2));
+        complices.add(new Complex(0, 2));
+        complices.add(new Complex(1, 0));
+        complices.add(new Complex(1, 6));
+        complices.add(new Complex(6, 5));
+        complices.add(new Complex(6, 5));
+        complices.add(new Complex(0, 0));
+        complices.add(new Complex(4, 7));
+        complices.add(new Complex(4, 7));
 
         for (Complex complex : complices) {
             System.out.println(complex);

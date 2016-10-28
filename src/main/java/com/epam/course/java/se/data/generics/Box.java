@@ -20,4 +20,10 @@ public class Box<T extends BaseInterface1> {
     public String getInfo() {
         return t.info();
     }
+
+    @SuppressWarnings("unchecked")
+    public T unchecked(Object obj) {
+        //
+        return (T) obj;
+    }
 }
